@@ -7,11 +7,11 @@ int main() {
     scanf("%f", &nota1);
 
     printf("Digite a segunda nota: ");
-    scanf("%f", nota2);
+    scanf("%f", &nota2);
 
-    media = nota1 + nota2 / 2;
+    media = (nota1 + nota2) / 2;
 
-    if (media >= 6) {
+    if (media >= 6 ) {
         printf("Aluno aprovado\n");
     } else {
         printf("Aluno reprovado\n");
