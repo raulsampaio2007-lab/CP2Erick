@@ -34,7 +34,21 @@ int main()
         printf("4 - Exibir resultado\n5 - Calcular derivada\n6 - Sair\n");
         printf("Escolha uma opcao: ");
         scanf("%d", &opcao);
-
+        switch (opcao)
+        {
+        case 1:
+            inserirNotas(&n1, &n2);
+            break;
+        case 2:
+            if (n1 != -1)
+            {
+                media = calcularMedia(n1, n2);
+                printf("Media calculada: %.2f\n", media);
+            }
+            else
+                printf("Erro: Insira as notas primeiro!\n");
+            break;
+        }
         if (opcao == 6)
             printf("Saindo...\n");
     } while (opcao != 6);
