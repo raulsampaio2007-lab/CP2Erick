@@ -52,6 +52,22 @@ int main()
         if (opcao == 6)
             printf("Saindo...\n");
     } while (opcao != 6);
+void verificarSituacao(float media) {
+    if (media >= 7.0) printf("Situacao: APROVADO\n");
+    else if (media >= 5.0) printf("Situacao: EXAME\n");
+    else printf("Situacao: REPROVADO\n");
+}
 
+// No switch do main:
+case 3:
+    if (media != -1) verificarSituacao(media);
+    else printf("Erro: Calcule a media primeiro!\n");
+    break;
+case 4:
+    if (media != -1) {
+        printf("\nRESULTADO: Notas %.1f e %.1f | Media: %.1f\n", n1, n2, media);
+        verificarSituacao(media);
+    } else printf("Nao ha resultados.\n");
+    break;
     return 0;
 }
