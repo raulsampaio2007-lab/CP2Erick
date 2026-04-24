@@ -2,7 +2,9 @@
 
 ## Modalidade
 Grupo de 5 integrantes
-
+Raul Sampaio RM 573523
+Pedro Sampaio RM 573522
+Luan Carneiro RM 573691
 ## Regras
 - Trabalhar no mesmo repositório
 - Mínimo de 3 commits por integrante
