@@ -52,22 +52,44 @@ int main()
         if (opcao == 6)
             printf("Saindo...\n");
     } while (opcao != 6);
-void verificarSituacao(float media) {
-    if (media >= 7.0) printf("Situacao: APROVADO\n");
-    else if (media >= 5.0) printf("Situacao: EXAME\n");
-    else printf("Situacao: REPROVADO\n");
-}
+    void verificarSituacao(float media)
+    {
+        if (media >= 7.0)
+            printf("Situacao: APROVADO\n");
+        else if (media >= 5.0)
+            printf("Situacao: EXAME\n");
+        else
+            printf("Situacao: REPROVADO\n");
+    }
 
 // No switch do main:
 case 3:
-    if (media != -1) verificarSituacao(media);
-    else printf("Erro: Calcule a media primeiro!\n");
+    if (media != -1)
+        verificarSituacao(media);
+    else
+        printf("Erro: Calcule a media primeiro!\n");
     break;
 case 4:
-    if (media != -1) {
+    if (media != -1)
+    {
         printf("\nRESULTADO: Notas %.1f e %.1f | Media: %.1f\n", n1, n2, media);
         verificarSituacao(media);
-    } else printf("Nao ha resultados.\n");
+    }
+    else
+        printf("Nao ha resultados.\n");
+    break;
+
+    void calcularDerivada() {
+    float a, b, c;
+    printf("\nFuncao: f(x) = ax^2 + bx + c\nDigite a, b e c: ");
+    scanf("%f %f %f", &a, &b, &c);
+    // f'(x) = 2ax + b
+    printf("Derivada f'(x) = %.2fx + %.2f\n", (2 * a), b);
+}
+
+// No switch do main:
+case 5:
+    calcularDerivada();
     break;
     return 0;
 }
