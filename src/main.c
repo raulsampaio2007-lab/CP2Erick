@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// 1. PROTÓTIPOS (Ficam no topo, fora de tudo)
+
 void inserirNotas(float *n1, float *n2);
 float calcularMedia(float n1, float n2);
 void verificarSituacao(float media);
@@ -49,9 +49,7 @@ int main() {
     } while (opcao != 6);
 
     return 0;
-} // FECHA O MAIN AQUI
-
-// 2. FUNÇÕES (Ficam todas fora do main, aqui embaixo)
+} 
 
 void inserirNotas(float *n1, float *n2) {
     printf("Digite a nota 1: ");
@@ -78,6 +76,6 @@ void calcularDerivada() {
     float a, b, c;
     printf("\nFuncao: f(x) = ax^2 + bx + c\nDigite a, b e c: ");
     scanf("%f %f %f", &a, &b, &c);
-    // f'(x) = 2ax + b
+   
     printf("Derivada f'(x) = %.2fx + %.2f\n", (2 * a), b);
 }
