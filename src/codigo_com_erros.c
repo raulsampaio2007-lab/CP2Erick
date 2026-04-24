@@ -3,7 +3,7 @@
 int main() {
     float nota1, nota2, media;
 
-    printf("Digite a primeira aanota: ");
+    printf("Digite a primeira nota: ");
     scanf("%f", &nota1);
 
     printf("Digite a segunda nota: ");
