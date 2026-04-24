@@ -1,8 +1,43 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main() {
-    
+void calcularMedia()
+{
+    float n1, n2, media;
+    printf("Nota 1: ");
+    scanf("%f", &n1);
+    printf("Nota 2: ");
+    scanf("%f", &n2);
+    media = (n1 + n2) / 2.0;
+    if (media >= 7)
+        printf("Status: Aprovado\n");
+    else if (media >= 5)
+        printf("Status: Exame\n");
+    else
+        printf("Status: Reprovado\n");
+}
 
-    
+int main()
+{
+    int opcao;
+    do
+    {
+        printf("\n--- MENU ACADEMICO ---\n");
+        printf("1. Media\n2. Sair\nEscolha: ");
+        scanf("%d", &opcao);
+
+        if (opcao == 1)
+        {
+            calcularMedia();
+        }
+        else if (opcao == 2)
+        {
+            printf("Saindo...\n");
+        }
+        else
+        {
+            printf("Opcao in!\n");
+        }
+    } while (opcao != 2);
+
     return 0;
 }
